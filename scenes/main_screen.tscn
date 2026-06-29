@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cof381u436056"]
+
+[node name="MainScreen" type="Node2D" unique_id=1968212909]
+
+[node name="Title" type="Label" parent="." unique_id=643976433]
+offset_left = 224.0
+offset_top = 123.0
+offset_right = 702.0
+offset_bottom = 173.0
+theme_override_font_sizes/font_size = 36
+text = "Femboys Farm Simulator 🩷"
+
+[node name="Buttons" type="VBoxContainer" parent="." unique_id=347977478]
+offset_left = 224.0
+offset_top = 257.0
+offset_right = 461.0
+offset_bottom = 433.0
+theme_override_constants/separation = 24
+
+[node name="NewGameBtn" type="Button" parent="Buttons" unique_id=826731442]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Новая игра"
+
+[node name="SettingsBtn" type="Button" parent="Buttons" unique_id=1619135746]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Настройки"
+
+[node name="ExitBtn" type="Button" parent="Buttons" unique_id=70275345]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Выйти"
+
+[node name="Version" type="Label" parent="." unique_id=778481230]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1045.0
+offset_top = 615.0
+offset_right = 1143.0
+offset_bottom = 638.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "version 0.0.1"
