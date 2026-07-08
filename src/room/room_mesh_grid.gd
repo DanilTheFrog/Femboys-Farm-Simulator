@@ -2,7 +2,7 @@ extends ColorRect
 # !TODO Переделать на shader
 
 @export() var grid_color: Color = Color.RED;
-@export() var grid_width: float = 1.;
+@export() var grid_width: float = 1.1;
 
 var tile_size: int = Constants.TEXTURE_RESOLUTION;
 var max_tiles: Vector2 = Vector2(Constants.MAX_TILES_X, Constants.MAX_TILES_Y);

@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://w1if6v38q584" path="res://resources/ready/tileset.tres" id="1_v2gnk"]
 [ext_resource type="Script" uid="uid://ddi0fcppnx3cj" path="res://src/room/room_mesh_grid.gd" id="3_e4yy5"]
+[ext_resource type="Script" uid="uid://6txfbnkj8enx" path="res://src/camera/camera_control.gd" id="3_ekf4n"]
 [ext_resource type="PackedScene" uid="uid://dshmyyjn8gpxq" path="res://components/character/character.tscn" id="3_ojate"]
 
 [node name="Room" type="Node2D" unique_id=1821854255]
@@ -23,6 +24,7 @@ frame_progress = 0.33452538
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1919155684]
 position = Vector2(575, 325)
+script = ExtResource("3_ekf4n")
 
 [node name="Grid" type="ColorRect" parent="." unique_id=785803226]
 color = Color(1, 1, 1, 0)
