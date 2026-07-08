@@ -14,6 +14,11 @@ config/name="Femboy Farm Simulator"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Constants="*uid://cw8q0u4x8ue7j"
+EventBus="*uid://bcbmn3tsyqmv6"
+
 [display]
 
 window/stretch/mode="canvas_items"
