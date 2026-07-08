@@ -17,6 +17,11 @@ offset_right = 461.0
 offset_bottom = 433.0
 theme_override_constants/separation = 24
 
+[node name="ContinueBtn" type="Button" parent="Buttons" unique_id=167459189]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Продолжить"
+
 [node name="NewGameBtn" type="Button" parent="Buttons" unique_id=826731442]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
