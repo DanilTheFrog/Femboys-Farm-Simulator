@@ -2,47 +2,24 @@
 
 [ext_resource type="Script" uid="uid://dley5pho34cke" path="res://ui/room_edit/edit_room_ui.gd" id="1_kgtgu"]
 
-[node name="EditRoomUI" type="Control" unique_id=430488930]
+[node name="EditRoomUI" type="CanvasLayer" unique_id=1105990371]
+
+[node name="Control" type="Control" parent="." unique_id=1005764317]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 script = ExtResource("1_kgtgu")
 
-[node name="PaletteEdit" type="HBoxContainer" parent="." unique_id=1568088653]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -230.0
-offset_top = -102.0
-offset_right = -15.679932
-offset_bottom = -45.0
-grow_horizontal = 0
-grow_vertical = 0
-alignment = 2
-
-[node name="Bed" type="Button" parent="PaletteEdit" unique_id=1275405594]
-custom_minimum_size = Vector2(75, 75)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 18
-text = "bed"
-
-[node name="PaletteManage" type="HBoxContainer" parent="." unique_id=1407333079]
+[node name="PaletteManage" type="HBoxContainer" parent="Control" unique_id=1407333079]
 layout_mode = 1
 offset_left = 40.0
 offset_top = 47.0
-offset_right = 273.0
+offset_right = 352.0
 offset_bottom = 122.0
 alignment = 2
 
-[node name="Back" type="Button" parent="PaletteManage" unique_id=414658651]
+[node name="Back" type="Button" parent="Control/PaletteManage" unique_id=414658651]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -51,7 +28,7 @@ theme_override_colors/font_color = Color(0.8745098, 0.23921569, 0.22352941, 1)
 theme_override_font_sizes/font_size = 18
 text = "back"
 
-[node name="Undo" type="Button" parent="PaletteManage" unique_id=1670176414]
+[node name="Undo" type="Button" parent="Control/PaletteManage" unique_id=1670176414]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -59,7 +36,7 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 18
 text = "undo"
 
-[node name="Bed" type="Button" parent="PaletteManage" unique_id=766113817]
+[node name="Bed" type="Button" parent="Control/PaletteManage" unique_id=766113817]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -67,7 +44,7 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 18
 text = "redo"
 
-[node name="Save" type="Button" parent="PaletteManage" unique_id=1313335016]
+[node name="Save" type="Button" parent="Control/PaletteManage" unique_id=1313335016]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -75,3 +52,42 @@ size_flags_vertical = 4
 theme_override_colors/font_color = Color(0.19215687, 0.8117647, 0.28235295, 1)
 theme_override_font_sizes/font_size = 18
 text = "save"
+
+[node name="PaletteEdit" type="HBoxContainer" parent="Control" unique_id=1568088653]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 863.32007
+offset_top = 488.0
+offset_right = 1096.3201
+offset_bottom = 563.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 2
+
+[node name="Table" type="Button" parent="Control/PaletteEdit" unique_id=1275405594]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 18
+text = "table"
+
+[node name="Chair" type="Button" parent="Control/PaletteEdit" unique_id=286727310]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 18
+text = "chair"
+
+[node name="Plant" type="Button" parent="Control/PaletteEdit" unique_id=518686601]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 18
+text = "plant"

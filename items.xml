@@ -1,0 +1,14 @@
+<items>
+    <item id="lamp_1" tag="carpet" tag="decorative" tag="furniture">
+        <image src="" />
+        <componensts>
+            <Light />
+            <Area />
+        <components/>
+
+        <stats>
+            <stat target="" value="">
+            <stat target="" value="">
+        </stats>
+    </item>
+</items>

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://crogwwn7s0c7y"]
+
+[ext_resource type="Script" uid="uid://bsc33i1lo3ajt" path="res://src/core/item/ItemObject.gd" id="1_j8cr6"]
+[ext_resource type="Texture2D" uid="uid://csetmfk6hnsb4" path="res://resources/furniture/ковер.png" id="2_j8cr6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qxe64"]
+radius = 8.0
+
+[node name="ItemObject" type="Node2D" unique_id=1852386843]
+script = ExtResource("1_j8cr6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1889177186]
+texture = ExtResource("2_j8cr6")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1922796864]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=373276943]
+position = Vector2(0, 10)
+shape = SubResource("CircleShape2D_qxe64")
+
+[node name="Label" type="Label" parent="." unique_id=250144703]
+offset_left = -26.0
+offset_top = -36.0
+offset_right = 27.0
+offset_bottom = -13.0
+text = "Лампа"
